@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        backgroundColor: Colors.teal,
+        backgroundColor: Colors.red,
         body: SafeArea(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -26,17 +26,18 @@ class MyApp extends StatelessWidget {
                   fontSize: 40,
                   color: Colors.white,
                   fontWeight: FontWeight.bold,
-                  fontFamily: 'Ubuntu',
+                  fontFamily: 'ubuntu',
                 ),
               ),
               Text(
                 ' • FLUTTER DEVELOPER',
                 style: TextStyle(
-                    color: Colors.teal[100],
+                    color: Colors.white70,
                     fontSize: 15,
                     letterSpacing: 2,
                     fontWeight: FontWeight.bold,
-                    fontFamily: 'sourceSansPro'),
+                    fontFamily: 'cinzel',
+                ),
               ),
 //              Container(
 //                margin: EdgeInsets.only(left: 60,right: 60),
@@ -46,45 +47,43 @@ class MyApp extends StatelessWidget {
             SizedBox(
               width: 150.0,
               child: Divider(
-                color: Colors.teal[100],
+                color: Colors.white,
               ),
             ),
               Card(
-                color: Colors.white,
                 margin: EdgeInsets.only(left: 40, right: 40, top: 50),
                 child: Padding(
                     padding: EdgeInsets.all(00.0),
                     child: ListTile(
                       leading: Icon(
                         Icons.phone,
-                        color: Colors.teal,
+                        color: Colors.red,
                       ),
                       title: Text(
                         '+91-6289076388',
                         style: TextStyle(
                           fontSize: 15,
                           fontFamily: 'sourceSansPro',
-                          color: Colors.teal,
+                          color: Colors.black,
                         ),
                       ),
                     )),
               ),
               Card(
-                color: Colors.white,
                 margin: EdgeInsets.symmetric(horizontal: 40, vertical: 30),
                 child: Padding(
                   padding: EdgeInsets.all(00.0),
                   child: ListTile(
                     leading: Icon(
                       Icons.email,
-                      color: Colors.teal,
+                      color: Colors.red,
                     ),
                     title: Text(
                       'souvikguria98@gmail.com',
                       style: TextStyle(
                           fontSize: 15,
                           fontFamily: "sourceSansPro",
-                          color: Colors.teal),
+                          color: Colors.black),
                     ),
                   ),
                 ),
