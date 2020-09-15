@@ -26,9 +26,19 @@ flutter:
 
   fonts:
   - family: ubuntu
+    fonts:
+     - asset: fonts/Ubuntu-BoldItalic.ttf
+
   - family: sourceSansPro
     fonts:
-    - asset: fonts/Ubuntu-BoldItalic.ttf
-    - asset: fonts/SourceSansPro-semiBold.ttf
+     - asset: fonts/sourceSansPro-SemiBold.ttf
+
+  - family: cinzel
+    fonts:
+     - asset: fonts/Cinzel-VariableFont_wght.ttf
+
+  - family: solway
+    fonts:
+     - asset: fonts/Solway-Bold.ttf
 
 
