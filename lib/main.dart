@@ -32,11 +32,11 @@ class MyApp extends StatelessWidget {
               Text(
                 ' • FLUTTER DEVELOPER',
                 style: TextStyle(
-                    color: Colors.white70,
-                    fontSize: 15,
-                    letterSpacing: 2,
-                    fontWeight: FontWeight.bold,
-                    fontFamily: 'cinzel',
+                  color: Colors.white70,
+                  fontSize: 15,
+                  letterSpacing: 2,
+                  fontWeight: FontWeight.bold,
+                  fontFamily: 'cinzel',
                 ),
               ),
 //              Container(
@@ -44,12 +44,12 @@ class MyApp extends StatelessWidget {
 //                padding: EdgeInsets.symmetric(vertical: 0.5,horizontal: 50),
 //                color: Colors.grey[500],
 //              ),
-            SizedBox(
-              width: 150.0,
-              child: Divider(
-                color: Colors.white,
+              SizedBox(
+                width: 150.0,
+                child: Divider(
+                  color: Colors.white,
+                ),
               ),
-            ),
               Card(
                 margin: EdgeInsets.only(left: 40, right: 40, top: 50),
                 child: Padding(
@@ -87,7 +87,23 @@ class MyApp extends StatelessWidget {
                     ),
                   ),
                 ),
-              )
+              ),
+              Card(
+                margin: EdgeInsets.symmetric(horizontal: 40, ),
+                child: ListTile(
+                  leading: Icon(
+                    Icons.share,
+                    color: Colors.red,
+                  ),
+                  title: Text(
+                    'github.com/devSouvik',
+                    style: TextStyle(
+                        fontSize: 15,
+                        fontFamily: "sourceSansPro",
+                        color: Colors.black),
+                  ),
+                ),
+              ),
             ],
           ),
         ),
