@@ -1,106 +1,63 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 void main() {
-  runApp(MyApp());
-}
-
-class MyApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
+  runApp(
+    MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        backgroundColor: Colors.red,
-        body: SafeArea(
-          child: Column(
+      home: SafeArea(
+        child: Scaffold(
+          backgroundColor: Colors.grey[850],
+          body: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               CircleAvatar(
-                radius: 70,
-                backgroundImage: AssetImage("images/pic.jpg"),
+                backgroundImage: AssetImage("images/pic1.jpg"),
+                radius: 50.0,
               ),
               Text(
-                'Souvik Guria',
-                style: TextStyle(
-                  fontSize: 40,
+                "Souvik Guria",
+                style: GoogleFonts.ptSerif(
+                  fontSize: 60.0,
                   color: Colors.white,
-                  fontWeight: FontWeight.bold,
-                  fontFamily: 'ubuntu',
+                  fontStyle: FontStyle.italic,
+                  // fontWeight: FontWeight.bold,
                 ),
               ),
               Text(
-                ' • FLUTTER DEVELOPER',
-                style: TextStyle(
-                  color: Colors.white70,
-                  fontSize: 15,
-                  letterSpacing: 2,
-                  fontWeight: FontWeight.bold,
-                  fontFamily: 'cinzel',
+                "FLUTTER DEVELOPER",
+                style: GoogleFonts.sourceSansPro(
+                  fontSize: 20.0,
+                  color: Colors.white54,
+                  fontWeight: FontWeight.normal,
+                  letterSpacing: 2.5,
                 ),
               ),
-//              Container(
-//                margin: EdgeInsets.only(left: 60,right: 60),
-//                padding: EdgeInsets.symmetric(vertical: 0.5,horizontal: 50),
-//                color: Colors.grey[500],
-//              ),
               SizedBox(
+                height: 20.0,
                 width: 150.0,
                 child: Divider(
-                  color: Colors.white,
+                  color: Colors.white38,
                 ),
               ),
               Card(
-                margin: EdgeInsets.only(left: 40, right: 40, top: 50),
-                child: Padding(
-                    padding: EdgeInsets.all(00.0),
-                    child: ListTile(
-                      leading: Icon(
-                        Icons.phone,
-                        color: Colors.red,
-                      ),
-                      title: Text(
-                        '+91-6289076388',
-                        style: TextStyle(
-                          fontSize: 15,
-                          fontFamily: 'sourceSansPro',
-                          color: Colors.black,
-                        ),
-                      ),
-                    )),
-              ),
-              Card(
-                margin: EdgeInsets.symmetric(horizontal: 40, vertical: 30),
-                child: Padding(
-                  padding: EdgeInsets.all(00.0),
-                  child: ListTile(
-                    leading: Icon(
-                      Icons.email,
-                      color: Colors.red,
-                    ),
-                    title: Text(
-                      'souvikguria98@gmail.com',
-                      style: TextStyle(
-                          fontSize: 15,
-                          fontFamily: "sourceSansPro",
-                          color: Colors.black),
-                    ),
-                  ),
-                ),
-              ),
-              Card(
-                margin: EdgeInsets.symmetric(horizontal: 40, ),
+                // padding: EdgeInsets.all(10.0),
+                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
                 child: ListTile(
-                  leading: Icon(
-                    Icons.share,
-                    color: Colors.red,
-                  ),
+                  leading: Icon(Icons.phone),
                   title: Text(
-                    'github.com/devSouvik',
-                    style: TextStyle(
-                        fontSize: 15,
-                        fontFamily: "sourceSansPro",
-                        color: Colors.black),
+                    "+91 6289076388",
+                    style: TextStyle(fontSize: 18.0),
+                  ),
+                ),
+              ),
+              Card(
+                margin: EdgeInsets.symmetric(vertical: 8.0, horizontal: 25.0),
+                child: ListTile(
+                  leading: Icon(Icons.email),
+                  title: Text(
+                    "souvikguriacp@gmail.com",
+                    style: TextStyle(fontSize: 18.0),
                   ),
                 ),
               ),
@@ -108,6 +65,6 @@ class MyApp extends StatelessWidget {
           ),
         ),
       ),
-    );
-  }
+    ),
+  );
 }
